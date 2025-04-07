@@ -1,0 +1,671 @@
+/* ==========================================================================
+   ユーティリティ：カラークラス
+   ========================================================================== */
+
+/* 文字色 */
+.text-main {
+    color: var(--main-color);
+}
+
+.text-purple {
+    color: var(--purple);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+/* 背景色 */
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+/* ボーダー色 */
+.border-main {
+    border-color: var(--main-color);
+}
+
+.border-purple {
+    border-color: var(--purple);
+}
+
+.border-blue {
+    border-color: var(--blue);
+}
+
+.border-orange {
+    border-color: var(--orange);
+}
+
+.border-green {
+    border-color: var(--green);
+}
+
+.border-black {
+    border-color: var(--black);
+}
+
+.border-white {
+    border-color: var(--white);
+}
+
+/* ==========================================================================
+   ユーティリティ：マージン & パディングクラス
+   ========================================================================== */
+
+/* マージン */
+.m-0 {
+    margin: 0 !important;
+}
+
+.m-1 {
+    margin: 0.25rem !important;
+}
+
+.m-2 {
+    margin: 0.5rem !important;
+}
+
+.m-3 {
+    margin: 1rem !important;
+}
+
+.m-4 {
+    margin: 1.5rem !important;
+}
+
+.m-5 {
+    margin: 3rem !important;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-1 {
+    margin-top: 0.25rem !important;
+}
+
+.mt-2 {
+    margin-top: 0.5rem !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem !important;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.ml-1 {
+    margin-left: 0.25rem !important;
+}
+
+.ml-2 {
+    margin-left: 0.5rem !important;
+}
+
+.ml-3 {
+    margin-left: 1rem !important;
+}
+
+.ml-4 {
+    margin-left: 1.5rem !important;
+}
+
+.ml-5 {
+    margin-left: 3rem !important;
+}
+
+.mr-0 {
+    margin-right: 0 !important;
+}
+
+.mr-1 {
+    margin-right: 0.25rem !important;
+}
+
+.mr-2 {
+    margin-right: 0.5rem !important;
+}
+
+.mr-3 {
+    margin-right: 1rem !important;
+}
+
+.mr-4 {
+    margin-right: 1.5rem !important;
+}
+
+.mr-5 {
+    margin-right: 3rem !important;
+}
+
+/* パディング */
+.p-0 {
+    padding: 0 !important;
+}
+
+.p-1 {
+    padding: 0.25rem !important;
+}
+
+.p-2 {
+    padding: 0.5rem !important;
+}
+
+.p-3 {
+    padding: 1rem !important;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.p-5 {
+    padding: 3rem !important;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.pt-1 {
+    padding-top: 0.25rem !important;
+}
+
+.pt-2 {
+    padding-top: 0.5rem !important;
+}
+
+.pt-3 {
+    padding-top: 1rem !important;
+}
+
+.pt-4 {
+    padding-top: 1.5rem !important;
+}
+
+.pt-5 {
+    padding-top: 3rem !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.pb-1 {
+    padding-bottom: 0.25rem !important;
+}
+
+.pb-2 {
+    padding-bottom: 0.5rem !important;
+}
+
+.pb-3 {
+    padding-bottom: 1rem !important;
+}
+
+.pb-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+.pb-5 {
+    padding-bottom: 3rem !important;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pl-1 {
+    padding-left: 0.25rem !important;
+}
+
+.pl-2 {
+    padding-left: 0.5rem !important;
+}
+
+.pl-3 {
+    padding-left: 1rem !important;
+}
+
+.pl-4 {
+    padding-left: 1.5rem !important;
+}
+
+.pl-5 {
+    padding-left: 3rem !important;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+.pr-1 {
+    padding-right: 0.25rem !important;
+}
+
+.pr-2 {
+    padding-right: 0.5rem !important;
+}
+
+.pr-3 {
+    padding-right: 1rem !important;
+}
+
+.pr-4 {
+    padding-right: 1.5rem !important;
+}
+
+.pr-5 {
+    padding-right: 3rem !important;
+}
+
+/* ==========================================================================
+   ユーティリティ：Flexbox クラス
+   ========================================================================== */
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.flex-item-auto {
+    flex: auto;
+}
+
+.flex-item-grow {
+    flex-grow: 1;
+}
+
+.flex-item-shrink {
+    flex-shrink: 1;
+}
+
+.order-first {
+    order: -1;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-last {
+    order: 999;
+}
+
+
+/* ==========================================================================
+   ユーティリティ：ボタンクラス
+   ========================================================================== */
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.btn-main {
+    background-color: var(--main-color);
+    color: var(--black);
+}
+
+.btn-purple {
+    background-color: var(--purple);
+    color: #fff;
+}
+
+.btn-blue {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.btn-orange {
+    background-color: var(--orange);
+    color: #fff;
+}
+
+.btn-green {
+    background-color: var(--green);
+    color: #fff;
+}
+
+.btn-black {
+    background-color: var(--black);
+    color: #fff;
+}
+
+.btn-white {
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* ==========================================================================
+   ユーティリティ：テキスト
+   ========================================================================== */
+
+/* 太字 */
+.text-bold {
+    font-weight: bold;
+}
+
+/* イタリック */
+.text-italic {
+    font-style: italic;
+}
+
+/* 小さめテキスト */
+.text-sm {
+    font-size: 0.875rem;
+}
+
+/* 大きめテキスト */
+.text-lg {
+    font-size: 1.25rem;
+}
+
+/* 中央揃え */
+.text-center {
+    text-align: center;
+}
+
+/* 右揃え */
+.text-right {
+    text-align: right;
+}
+
+/* 左揃え */
+.text-left {
+    text-align: left;
+}
+
+/* フォントサイズ */
+.fs-xs {
+    font-size: 0.75rem;
+}
+
+.fs-sm {
+    font-size: 0.875rem;
+}
+
+.fs-base {
+    font-size: 1rem;
+}
+
+.fs-lg {
+    font-size: 1.125rem;
+}
+
+.fs-xl {
+    font-size: 1.25rem;
+}
+
+.fs-2xl {
+    font-size: 1.5rem;
+}
+
+.fs-3xl {
+    font-size: clamp(1.75rem, 1.646rem + 0.44vw, 2rem);
+}
+
+/* ==========================================================================
+   ユーティリティ：幅（width）クラス
+   ========================================================================== */
+
+.w-25 {
+    width: 25% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.w-75 {
+    width: 75% !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-auto {
+    width: auto !important;
+}
+
+.w-max {
+    width: max-content !important;
+}
+
+.h2 {
+    font-size: clamp(2.938rem, 2.6rem + 1.13vw, 3.5rem);
+}
+
+/* ==========================================================================
+   ユーティリティ：ボーダー半径クラス
+   ========================================================================== */
+
+.radius-0 {
+    border-radius: 0 !important;
+}
+
+.radius-sm {
+    border-radius: 4px !important;
+}
+
+.radius {
+    border-radius: 8px !important;
+}
+
+.radius-lg {
+    border-radius: 16px !important;
+}
+
+.radius-full {
+    border-radius: 9999px !important;
+}
+
+/* ==========================================================================
+   ユーティリティ：リストスタイル
+   ========================================================================== */
+
+/* デフォルトのディスクマーカー */
+.list-disc {
+    list-style-type: disc !important;
+}
+
+/* サークルマーカー */
+.list-circle {
+    list-style-type: circle !important;
+}
+
+/* スクエアマーカー */
+.list-square {
+    list-style-type: square !important;
+}
+
+/* 番号付きリスト */
+.list-decimal {
+    list-style-type: decimal !important;
+}
+
+.list-decimal-circle {
+    list-style-type: none !important;
+    counter-reset: custom-counter;
+}
+
+.list-decimal-circle li {
+    counter-increment: custom-counter;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.list-decimal-circle li::before {
+    content: counter(custom-counter, cjk-ideographic);
+    font-family: system-ui, sans-serif;
+    position: absolute;
+    left: 0;
+}
+
+/* 行頭文字なし */
+.list-none {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
