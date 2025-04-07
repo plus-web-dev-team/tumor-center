@@ -131,6 +131,7 @@ header nav ul li a.nav-info:active {
 }
 
 .footer {
+    margin-top: clamp(3.75rem, 2.196rem + 6.63vw, 7.5rem);
     background-color: var(--black);
     padding: clamp(1.75rem, 1.595rem + 0.66vw, 2.125rem) 0 clamp(8.875rem, 14.886rem - 7.51vw, 4.625rem) 0;
     color: var(--main-color);
@@ -163,6 +164,91 @@ header nav ul li a.nav-info:active {
     text-decoration: underline;
 }
 
+/* ==========================================================================
+   3カラム折り返しリスト用スタイル
+   ========================================================================== */
+.facility-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.facility-list li {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #ccc;
+}
+
+.facility-list .item-head {
+    background-color: #4d443c;
+    color: #fff;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.facility-list .item-body {
+    padding: 1em;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.facility-list li.col-span-2 {
+    flex: 1 1 calc(50% - 20px);
+}
+
+/* ==========================================================================
+   テーブル
+   ========================================================================== */
+
+.table-scroll {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.data-table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 100%;
+    width: max-content;
+}
+
+.data-table th,
+.data-table td {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #fff;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.data-table .main-title {
+    background-color: #a5e331;
+    color: #8e3e90;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.data-table thead th:not(.main-title) {
+    background-color: #4d443c;
+    color: #fff;
+    font-weight: bold;
+}
+
+.data-table .row-label {
+    background-color: #4d443c;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
 
 /* ==========================================================================
    ブログ用スタイル
@@ -376,6 +462,15 @@ header nav ul li a.nav-info:active {
         right: 10px;
 
     }
+
+    .facility-list li {
+        flex: 1 1 100%;
+        /* スマホ：1列 */
+    }
+
+    section {
+        margin: clamp(3.75rem, 2.196rem + 6.63vw, 7.5rem) 0;
+    }
 }
 
 /* ==========================================================================
@@ -389,6 +484,15 @@ header nav ul li a.nav-info:active {
 
     .header-nav {
         display: none;
+    }
+
+    .facility-list li {
+        flex: 1 1 calc(50% - 20px);
+        /* タブレット：2列 */
+    }
+
+    section {
+        margin: clamp(3.75rem, 2.196rem + 6.63vw, 7.5rem) 0;
     }
 
 }
