@@ -21,6 +21,18 @@ html {
     scroll-behavior: smooth;
 }
 
+
+.h2 {
+    font-size: clamp(2.5rem, 2.057rem + 1.8vw, 3.5rem);
+    line-height: 1.4;
+    position: relative;
+}
+
+main {
+    margin-top: clamp(3.75rem, 2.196rem + 6.63vw, 7.5rem);
+}
+
+
 header {
     width: 100%;
     position: fixed;
@@ -164,6 +176,19 @@ header nav ul li a.nav-info:active {
     text-decoration: underline;
 }
 
+a {
+    color: inherit;
+}
+
+.cooperative-inner {
+    & img {
+        width: clamp(27.875rem, 12.751rem + 64.53vw, 64.375rem);
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
 /* ==========================================================================
    3カラム折り返しリスト用スタイル
    ========================================================================== */
@@ -217,7 +242,6 @@ header nav ul li a.nav-info:active {
     border-collapse: separate;
     border-spacing: 10px;
     width: 100%;
-    width: max-content;
 }
 
 .data-table th,
@@ -471,6 +495,12 @@ header nav ul li a.nav-info:active {
     section {
         margin: clamp(3.75rem, 2.196rem + 6.63vw, 7.5rem) 0;
     }
+
+    .cooperative-inner img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 /* ==========================================================================
@@ -516,12 +546,6 @@ header nav ul li a.nav-info:active {
         margin: 0;
     }
 
-    .h2 {
-        font-size: clamp(2.938rem, 2.6rem + 1.13vw, 3.5rem);
-        line-height: 1.4;
-        position: relative;
-    }
-
     .container {
         max-width: 1280px;
         margin: 0 auto;
@@ -530,7 +554,7 @@ header nav ul li a.nav-info:active {
 
     section {
         position: relative;
-        padding: clamp(7.5rem, 4.392rem + 13.26vw, 15rem) 0;
+        padding: clamp(3.75rem, 2.196rem + 6.63vw, 7.5rem) 0;
     }
 
     .about-title::after {
@@ -539,13 +563,13 @@ header nav ul li a.nav-info:active {
         background-image: url("../img/about-object.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        bottom: -500px;
+        top: 100%;
         left: 0;
-        width: 660px;
-        height: 494px;
+        transform: translateY(0);
+        width: clamp(0rem, -11.395rem + 48.62vw, 27.5rem);
+        height: clamp(0rem, -7.096rem + 30.28vw, 17.125rem);
         pointer-events: none;
         z-index: -1;
-
     }
 
     .greeting-title::before {
@@ -592,7 +616,7 @@ header nav ul li a.nav-info:active {
     }
 
     .animation {
-        margin: 0;
+        margin-top: -120px;
         overflow: hidden;
     }
 

@@ -1,12 +1,15 @@
 {
-  "short_name": "",
-  "name": "",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+	"short_name": "腫瘍センター",
+	"name": "弘前大学附属病院 腫瘍センター",
+	"description": "弘前大学附属病院 腫瘍センターの公式サイトです。",
+	"icons": [
+		{
+			"src": "icon.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	],
+	"start_url": "/?utm_source=homescreen",
+	"background_color": "#F0F0D8",
+	"theme_color": "#585048"
 }
