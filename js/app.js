@@ -128,3 +128,10 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener("resize", updateHeight); // リサイズ時にも対応
     }
 });
+
+for (const img of document.querySelectorAll('img[data-prefer-html-size]')) {
+    if (img.hasAttribute('width') && img.hasAttribute('height')) {
+        img.style.width = `${img.getAttribute('width')}px`;
+        img.style.height = `${img.getAttribute('height')}px`;
+    }
+}

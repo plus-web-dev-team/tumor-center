@@ -21,6 +21,10 @@ html {
     scroll-behavior: smooth;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 
 .h2 {
     font-size: clamp(2.5rem, 2.057rem + 1.8vw, 3.5rem);
