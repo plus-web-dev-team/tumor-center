@@ -616,8 +616,8 @@ a {
     }
 
     .object {
-        width: 20vw;
-        height: 20vw;
+        width: 15vw;
+        height: 15vw;
         background-color: red;
         border-radius: 50%;
         display: flex;
