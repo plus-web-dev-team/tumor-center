@@ -616,8 +616,8 @@ a {
     }
 
     .object {
-        width: 400px;
-        height: 400px;
+        width: 20vw;
+        height: 20vw;
         background-color: red;
         border-radius: 50%;
         display: flex;
@@ -650,7 +650,7 @@ a {
     }
 
     .object span {
-        font-size: 6em;
+        font-size: 4em;
         font-weight: bold;
         color: white;
         animation: fadeOut 3s forwards;
