@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Read More toggle
+    // 続きを読む toggle
     const toggleButtons = document.querySelectorAll(".read-more-toggle");
 
     for (const toggle of toggleButtons) {
@@ -19,12 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // 患者さんへ toggle
-    const patientTitles = document.querySelectorAll(".article-patient-title");
+    // 患者さんへ・お役立ち情報 toggle
+    const patientTitles = document.querySelectorAll(".article-title");
 
     for (const title of patientTitles) {
-        const article = title.closest(".article-patient");
-        const content = article?.parentNode?.querySelector(".article-patient-content");
+        const article = title.closest(".article");
+        const content = article?.parentNode?.querySelector(".article-content");
 
         let expanded = false;
         if (content) {
@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// img要素 loading="lazy" を追加、幅と高さを設定
 for (const img of document.querySelectorAll("img")) {
     img.setAttribute("loading", "lazy");
 
@@ -58,6 +59,7 @@ for (const img of document.querySelectorAll("img")) {
     }
 }
 
+// トップへ戻るボタン
 const backToTop = document.getElementById("backToTop");
 if (backToTop) {
     window.addEventListener("scroll", () => {
@@ -69,6 +71,7 @@ if (backToTop) {
     });
 }
 
+// フッターが画面に入ったら、トップへ戻るボタンの画像を変更
 const footer = document.querySelector("footer");
 
 if (backToTop && footer) {
@@ -89,27 +92,7 @@ if (backToTop && footer) {
     observer.observe(footer);
 }
 
-for (const anchor of document.querySelectorAll('a[href^="#"]')) {
-    anchor.addEventListener("click", (e) => {
-        const targetId = anchor.getAttribute("href");
-        if (targetId.length > 1) {
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                e.preventDefault();
-                const offset = 100;
-                const top =
-                    targetElement.getBoundingClientRect().top +
-                    window.pageYOffset -
-                    offset;
-                window.scrollTo({
-                    top,
-                    behavior: "smooth",
-                });
-            }
-        }
-    });
-}
-
+// スマホ用ヘッダーの高さ調整
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".sp-header-header");
     const nav = document.querySelector(".sp-nav");
@@ -129,6 +112,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// img要素の幅と高さを設定
+// img要素にdata-prefer-html-size属性がある場合、幅と高さをHTMLから取得して設定
+// ただし、widthとheight属性がない場合のみ
+// 画像の幅と高さをstyle属性に設定
 for (const img of document.querySelectorAll('img[data-prefer-html-size]')) {
     if (img.hasAttribute('width') && img.hasAttribute('height')) {
         img.style.width = `${img.getAttribute('width')}px`;

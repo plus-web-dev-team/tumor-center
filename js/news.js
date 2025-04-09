@@ -1,7 +1,7 @@
 const apiKey = "AX3ShqnvRhW0AwUc7Bl0LpnFajMG8HKMhnhW"; // MicroCMSのAPIキー
 const endpoint = "https://tkrizbapte.microcms.io/api/v1/blogs"; // エンドポイントURL
 const limit = 5; // 1ページあたりの記事数
-let offset = 0; // 取得開始位置
+const offset = 0; // 取得開始位置
 let totalCount = 0; // 全記事数
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -72,11 +72,11 @@ document.addEventListener("DOMContentLoaded", () => {
             wrapper.classList.add("flex-item");
 
             const article = document.createElement("article");
-            article.classList.add("article");
+            article.classList.add("article", "bg-blue", "text-white");
 
             article.innerHTML = `
     <time class="article-date" datetime="${item.createdAt}">${formattedDate}</time>
-    <h2 class="article-title">${item.title}</h2>
+    <h2 class="article-title hover-orange">${item.title}</h2>
 `;
 
             wrapper.appendChild(article);

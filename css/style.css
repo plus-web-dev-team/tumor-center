@@ -287,8 +287,6 @@ a {
     margin-bottom: 1rem;
     padding: 1rem;
     transition: box-shadow 0.3s;
-    background-color: var(--blue);
-    color: var(--white);
     width: 100%;
     box-sizing: border-box;
     overflow-wrap: break-word;
@@ -304,8 +302,24 @@ a {
     cursor: pointer;
 }
 
-.article-title:hover {
+.article-title.hover-green:hover {
+    color: var(--green);
+}
+
+.article-title.hover-orange:hover {
     color: var(--orange);
+}
+
+.article-title.hover-blue:hover {
+    color: var(--blue);
+}
+
+.article-title.hover-black:hover {
+    color: var(--black);
+}
+
+.article-title.hover-purple:hover {
+    color: var(--purple);
 }
 
 .article-content {
@@ -327,55 +341,6 @@ a {
 }
 
 .article-content img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* ==========================================================================
-   患者さんへボタンスタイル
-   ========================================================================== */
-
-.article-patient {
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    transition: box-shadow 0.3s;
-    background-color: var(--orange);
-    color: var(--white);
-    width: 100%;
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-}
-
-.article-patient:hover {
-    box-shadow: 0 4px 8px color-mix(in srgb, black 10%, transparent);
-}
-
-.article-patient-title {
-    margin: 0;
-    font-size: 1.25rem;
-    cursor: pointer;
-}
-
-.article-patient-title:hover {
-    color: var(--green);
-}
-
-.article-patient-content {
-    background-color: #fff;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    display: none;
-}
-
-.article-patient-content p {
-    margin: 0;
-}
-
-.article-patient-content img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -582,10 +547,11 @@ a {
         background-image: url("../img/greeting-object.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        bottom: clamp(-120px, -7.2vw, -250px);
-        left: 0;
-        width: 660px;
-        height: 494px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: clamp(0rem, -11.395rem + 48.62vw, 27.5rem);
+        height: clamp(0rem, -7.096rem + 30.28vw, 17.125rem);
         pointer-events: none;
         z-index: -1;
 
@@ -597,10 +563,11 @@ a {
         background-image: url("../img/news-object.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        top: 0;
-        left: 0;
-        width: 660px;
-        height: 494px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: clamp(0rem, -11.395rem + 48.62vw, 27.5rem);
+        height: clamp(0rem, -7.096rem + 30.28vw, 17.125rem);
         pointer-events: none;
         z-index: -1;
     }
@@ -611,10 +578,26 @@ a {
         background-image: url("../img/patient-object.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        top: 0;
-        left: 0;
-        width: 660px;
-        height: 494px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: clamp(0rem, -11.395rem + 48.62vw, 27.5rem);
+        height: clamp(0rem, -7.096rem + 30.28vw, 17.125rem);
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .info-title::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/info-object.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: clamp(0rem, -11.395rem + 48.62vw, 27.5rem);
+        height: clamp(0rem, -7.096rem + 30.28vw, 17.125rem);
         pointer-events: none;
         z-index: -1;
     }
@@ -633,8 +616,8 @@ a {
     }
 
     .object {
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 400px;
         background-color: red;
         border-radius: 50%;
         display: flex;
@@ -667,7 +650,7 @@ a {
     }
 
     .object span {
-        font-size: 2em;
+        font-size: 6em;
         font-weight: bold;
         color: white;
         animation: fadeOut 3s forwards;
