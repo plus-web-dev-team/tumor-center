@@ -1,266 +1,399 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>がん相談支援センター | 腫瘍センター</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "mbt0fpv",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>がん相談支援センター | 腫瘍センター</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/utility.css">
-  <meta name="description" content="" />
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:image:alt" content="" />
-  <link rel="icon" href="favicon.ico" sizes="any" />
-  <link rel="icon" href="icon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="icon.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <meta name="theme-color" content="#fafafa" />
-  <script>
-  (function(d) {
-    var config = {
-        kitId: "mbt0fpv",
-        scriptTimeout: 3000,
-        async: true,
-      },
-      h = d.documentElement,
-      t = setTimeout(function() {
-        h.className =
-          h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-      }, config.scriptTimeout),
-      tk = d.createElement("script"),
-      f = false,
-      s = d.getElementsByTagName("script")[0],
-      a;
-    h.className += " wf-loading";
-    tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-    tk.async = true;
-    tk.onload = tk.onreadystatechange = function() {
-      a = this.readyState;
-      if (f || (a && a != "complete" && a != "loaded")) return;
-      f = true;
-      clearTimeout(t);
-      try {
-        Typekit.load(config);
-      } catch (e) {}
-    };
-    s.parentNode.insertBefore(tk, s);
-  })(document);
-
-  </script>
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <nav class="header-nav">
-        <div><a href="./"><img src="img/logo.svg" alt="弘前大学腫瘍センターのロゴ" width="189" height="47"></a></div>
-        <ul>
-          <li><a href="#about" class="nav-tumor-center">腫瘍センターについて</a>
-            <ul>
-              <li><a href="./#cancerboard" class="nav-tumor-center">キャンサーボード</a></li>
-              <li><a href="./#cooperative" class="nav-tumor-center">協力体制</a></li>
-              <li><a href="./#greeting" class="nav-tumor-center">ごあいさつ</a></li>
-            </ul>
-          </li>
-          <li><a href="./#news" class="nav-news">お知らせ</a></li>
-          <li><a href="./#patient" class="nav-patient">患者さんへ</a>
-            <ul>
-              <li><a href="./#consultation" class="nav-patient">相談するには</a></li>
-              <li><a href="./#surgery" class="nav-patient">手術とは</a></li>
-              <li><a href="./#chemotherapy" class="nav-patient">化学療法とは</a></li>
-              <li><a href="./#radiation-therapy" class="nav-patient">放射線治療とは</a></li>
-              <li><a href="./#palliative-care" class="nav-patient">緩和ケアとは</a></li>
-              <li><a href="./#genome-testing" class="nav-patient">がんゲノム医療室</a></li>
-              <li><a href="./#medical-achievements" class="nav-patient">診療実績</a></li>
-              <li><a href="./#second-opinion" class="nav-patient">セカンドオピニオン</a></li>
-            </ul>
-          </li>
-          <li><a href="./#info" class="nav-info">お役立ち情報</a>
-            <ul>
-              <li><a href="./#cancer-information-service" class="nav-info">がん情報サービス</a></li>
-              <li><a href="./#procedure" class="nav-info">青森県がん情報サービス</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main id="main">
-    <div class="sp-header">
+  <body>
+    <header>
       <div class="container">
-        <div class="sp-header-header mt-5">
-          <div class="sp-header-logo">
-            <a href="./"><img src="img/small-logo.svg" alt="弘前大学腫瘍センターのモバイル用ロゴ" width="252" height="58"></a>
+        <nav class="header-nav">
+          <div>
+            <a href="./"
+              ><img
+                src="img/logo.svg"
+                alt="弘前大学腫瘍センターのロゴ"
+                width="189"
+                height="47"
+            /></a>
           </div>
-        </div>
-        <div class="sp-header-inner">
-          <img src="img/sp-profile.svg" alt="腫瘍センターの紹介イラスト" width="283" height="82">
-        </div>
-      </div>
-      <div class="sp-nav">
-        <ul class="flex justify-between p-0">
-          <li><a href="about"><img src="img/sp-nav-about.svg" alt="腫瘍センターについて" width="66" height="75"></a>
-          </li>
-          <li><a href="news"><img src="img/sp-nav-news.svg" alt="お知らせ" width="69" height="75"></a></li>
-          <li><a href="patient"><img src="img/sp-nav-patient.svg" alt="患者さんへ" width="63" height="67"></a></li>
-          <li><a href="info"><img src="img/sp-nav-info.svg" alt="お役立ち情報" width="73" height="76"></a></li>
-        </ul>
-      </div>
-    </div>
-    <section id="about">
-      <div class="container">
-        <div class="about">
-          <div class="flex gap-30 flex-column-s">
-            <div class="flex-item">
-              <h2 class="h2 text-orange mt-0">
-                がん相談<br>
-                支援センター
-              </h2>
-            </div>
-            <div class="flex-item">
-              <p class="bg-orange text-white p-3 radius text-lg">がん相談支援センターでは…</p>
-              <p class="expandable-text">
-                がんと言われてこれからのことが不安…<br>
-                お金のことや仕事のことが心配<br>
-                副作用にどのように対応したらよいのか<br>
-                緩和ケアとはどういうものなのか<br><br>
-                など、がんに関する様々なご相談をお受けしております。<br><br>
-                そのほか、希少がんや小児がん、AYA世代のがん、妊孕性温存、ゲノム医療についての相談もお受けしております。<br><br>
-                患者さんやご家族の方、当院以外の医療機関をご利用の方、当院に通っていない地域の皆様など、どなたでもご利用いただけます。
-              </p>
-              <div class="flex flex-column items-center justify-center">
-                <p><a href="" class="btn btn-orange read-more-toggle">続きを読む</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="details">
-      <div class="container">
-        <div class="details-inner">
-          <div class="flex flex-column-s gap-30">
-            <div class="flex-item">
-              <p class="bg-orange text-white p-3 radius text-lg mt-0">
-                ご利用について
-              </p>
-              <p class="text-lg">⚫︎ご相談は無料・匿名でご利用いただけます。</p>
-              <p class="text-lg">⚫︎相談内容がご本人の同意なく第三者（主治医含む）に伝わることはありません。</p>
-            </div>
-            <div class="flex-item">
-              <ul class="facility-list mb-5">
+          <ul>
+            <li>
+              <a href="#about" class="nav-tumor-center">腫瘍センターについて</a>
+              <ul>
                 <li>
-                  <div class="item-head fs-xs">利用日</div>
-                  <div class="item-body">月～金</div>
+                  <a href="./#cancerboard" class="nav-tumor-center"
+                    >キャンサーボード</a
+                  >
                 </li>
                 <li>
-                  <div class="item-head fs-xs">時　間</div>
-                  <div class="item-body"><span class="fs-xs">8：30～17：00</span></div>
+                  <a href="./#cooperative" class="nav-tumor-center">協力体制</a>
                 </li>
                 <li>
-                  <div class="item-head fs-xs">方　法</div>
-                  <div class="item-body">
-                    面談・電話
-                  </div>
-                </li>
-                <li>
-                  <div class="item-head fs-xs">費　用</div>
-                  <div class="item-body">無　料</div>
+                  <a href="./#greeting" class="nav-tumor-center">ごあいさつ</a>
                 </li>
               </ul>
-              <div class="img-box">
-                <img src="img/supportcenter-map.svg" alt="がん相談支援センターの地図" width="628" height="546">
+            </li>
+            <li><a href="./#news" class="nav-news">お知らせ</a></li>
+            <li>
+              <a href="./#patient" class="nav-patient">患者さんへ</a>
+              <ul>
+                <li>
+                  <a href="./#consultation" class="nav-patient">相談するには</a>
+                </li>
+                <li><a href="./#surgery" class="nav-patient">手術とは</a></li>
+                <li>
+                  <a href="./#chemotherapy" class="nav-patient">化学療法とは</a>
+                </li>
+                <li>
+                  <a href="./#radiation-therapy" class="nav-patient"
+                    >放射線治療とは</a
+                  >
+                </li>
+                <li>
+                  <a href="./#palliative-care" class="nav-patient"
+                    >緩和ケアとは</a
+                  >
+                </li>
+                <li>
+                  <a href="./#genome-testing" class="nav-patient"
+                    >がんゲノム医療室</a
+                  >
+                </li>
+                <li>
+                  <a href="./#medical-achievements" class="nav-patient"
+                    >診療実績</a
+                  >
+                </li>
+                <li>
+                  <a href="./#second-opinion" class="nav-patient"
+                    >セカンドオピニオン</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="./#info" class="nav-info">お役立ち情報</a>
+              <ul>
+                <li>
+                  <a href="./#cancer-information-service" class="nav-info"
+                    >がん情報サービス</a
+                  >
+                </li>
+                <li>
+                  <a href="./#procedure" class="nav-info"
+                    >青森県がん情報サービス</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="sp-header">
+        <div class="container">
+          <div class="sp-header-header mt-5">
+            <div class="sp-header-logo">
+              <a href="./"
+                ><img
+                  src="img/small-logo.svg"
+                  alt="弘前大学腫瘍センターのモバイル用ロゴ"
+                  width="252"
+                  height="58"
+              /></a>
+            </div>
+          </div>
+          <div class="sp-header-inner">
+            <img
+              src="img/sp-profile.svg"
+              alt="腫瘍センターの紹介イラスト"
+              width="283"
+              height="82"
+            />
+          </div>
+        </div>
+        <div class="sp-nav">
+          <ul class="flex justify-between p-0">
+            <li>
+              <a href="about"
+                ><img
+                  src="img/sp-nav-about.svg"
+                  alt="腫瘍センターについて"
+                  width="66"
+                  height="75"
+              /></a>
+            </li>
+            <li>
+              <a href="news"
+                ><img
+                  src="img/sp-nav-news.svg"
+                  alt="お知らせ"
+                  width="69"
+                  height="75"
+              /></a>
+            </li>
+            <li>
+              <a href="patient"
+                ><img
+                  src="img/sp-nav-patient.svg"
+                  alt="患者さんへ"
+                  width="63"
+                  height="67"
+              /></a>
+            </li>
+            <li>
+              <a href="info"
+                ><img
+                  src="img/sp-nav-info.svg"
+                  alt="お役立ち情報"
+                  width="73"
+                  height="76"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section id="about">
+        <div class="container">
+          <div class="about">
+            <div class="flex gap-30 flex-column-s">
+              <div class="flex-item">
+                <h2 class="h2 text-orange mt-0">
+                  がん相談<br />
+                  支援センター
+                </h2>
+              </div>
+              <div class="flex-item">
+                <p class="bg-orange text-white p-3 radius text-lg">
+                  がん相談支援センターでは…
+                </p>
+                <p class="expandable-text">
+                  がんと言われてこれからのことが不安…<br />
+                  お金のことや仕事のことが心配<br />
+                  副作用にどのように対応したらよいのか<br />
+                  緩和ケアとはどういうものなのか<br /><br />
+                  など、がんに関する様々なご相談をお受けしております。<br /><br />
+                  そのほか、希少がんや小児がん、AYA世代のがん、妊孕性温存、ゲノム医療についての相談もお受けしております。<br /><br />
+                  患者さんやご家族の方、当院以外の医療機関をご利用の方、当院に通っていない地域の皆様など、どなたでもご利用いただけます。
+                </p>
+                <div class="flex flex-column items-center justify-center">
+                  <p>
+                    <a href="" class="btn btn-orange read-more-toggle"
+                      >続きを読む</a
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="support">
-      <div class="container">
-        <div class="support-inner">
-          <div class="flex flex-column-s gap-30">
-            <div class="flex-item">
-              <p class="bg-orange text-white p-3 radius text-lg mt-0">
-                直通電話
-              </p>
-              <p class="fs-2xl text-orange">
-                TEL.<a href="tel:0172395174">0172-39-5174</a>
-              </p>
-              <p class="fs-2xl text-orange">
-                FAX.<a href="fax:0172395003">0172-39-5003</a>
-              </p>
-            </div>
-            <div class="flex-item">
-              <div class="mb-5">
-                <p class="bg-green text-purple p-3 radius text-lg mt-0">
-                  リーフレット（PDF）
+      </section>
+      <section id="details">
+        <div class="container">
+          <div class="details-inner">
+            <div class="flex flex-column-s gap-30">
+              <div class="flex-item">
+                <p class="bg-orange text-white p-3 radius text-lg mt-0">
+                  ご利用について
+                </p>
+                <p class="text-lg">
+                  ⚫︎ご相談は無料・匿名でご利用いただけます。
+                </p>
+                <p class="text-lg">
+                  ⚫︎相談内容がご本人の同意なく第三者（主治医含む）に伝わることはありません。
                 </p>
               </div>
+              <div class="flex-item">
+                <ul class="facility-list mb-5">
+                  <li>
+                    <div class="item-head fs-xs">利用日</div>
+                    <div class="item-body">月～金</div>
+                  </li>
+                  <li>
+                    <div class="item-head fs-xs">時　間</div>
+                    <div class="item-body">
+                      <span class="fs-xs">8：30～17：00</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-head fs-xs">方　法</div>
+                    <div class="item-body">面談・電話</div>
+                  </li>
+                  <li>
+                    <div class="item-head fs-xs">費　用</div>
+                    <div class="item-body">無　料</div>
+                  </li>
+                </ul>
+                <div class="img-box">
+                  <img
+                    src="img/supportcenter-map.svg"
+                    alt="がん相談支援センターの地図"
+                    width="628"
+                    height="546"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <section id="support">
+        <div class="container">
+          <div class="support-inner">
+            <div class="flex flex-column-s gap-30">
+              <div class="flex-item">
+                <p class="bg-orange text-white p-3 radius text-lg mt-0">
+                  直通電話
+                </p>
+                <p class="fs-2xl text-orange">
+                  TEL.<a href="tel:0172395174">0172-39-5174</a>
+                </p>
+                <p class="fs-2xl text-orange">
+                  FAX.<a href="fax:0172395003">0172-39-5003</a>
+                </p>
+              </div>
+              <div class="flex-item">
+                <div class="mb-5">
+                  <p class="bg-green text-purple p-3 radius text-lg mt-0">
+                    リーフレット（PDF）
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="posttreatment">
+        <div class="container">
+          <div class="posttreatment-inner">
+            <div class="flex flex-column-s gap-30 mb-5">
+              <div class="flex-item">
+                <p class="bg-orange text-white p-3 radius text-lg mt-0">
+                  対応内容
+                </p>
+              </div>
+              <div class="flex-item">
+                <ul class="list-none mt-0">
+                  <li class="text-orange bg-white p-2 radius mb-3">
+                    ①がんの予防やがん検診に関する情報の提供
+                  </li>
+                  <li class="text-orange bg-white p-2 radius mb-3">
+                    ②がんの治療に関する一般的な情報の提供
+                  </li>
+                  <li class="text-orange bg-white p-2 radius mb-3">
+                    ③がんとの共生に関する情報の提供・相談支援
+                  </li>
+                  <li class="text-orange bg-white p-2 radius mb-3">④その他</li>
+                  <li class="text-orange bg-white p-2 radius mb-3">
+                    以下の項目のような、自施設での提供が難しい場合、適切な医療機関に紹介いたします。
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="back-to-top" id="backToTop">
+        <a href="#main" aria-label="トップに戻る"
+          ><img
+            src="img/top.svg"
+            alt="ページの先頭に戻るボタン"
+            width="34"
+            height="34"
+        /></a>
       </div>
-    </section>
-    <section id="posttreatment">
+    </main>
+    <footer class="footer">
       <div class="container">
-        <div class="posttreatment-inner">
-          <div class="flex flex-column-s gap-30 mb-5">
-            <div class="flex-item">
-              <p class="bg-orange text-white p-3 radius text-lg mt-0">
-                対応内容
+        <div class="footer-inner">
+          <div class="flex flex-column-s justify-between gap-30">
+            <div class="footer-item-shrink">
+              <img
+                src="img/small-logo.svg"
+                alt="弘前大学腫瘍センターロゴ"
+                width="252"
+                height="58"
+              />
+            </div>
+            <div class="flex-item-shrink">
+              <img
+                src="img/profile.svg"
+                alt="腫瘍センターの所在地情報のイラスト"
+                width="253"
+                height="67"
+              />
+              <p>
+                〒036-8563 青森県弘前市本町53番地<br />
+                TEL: 0172-39-5111（代表）<br />
+                FAX: 0172-39-5003
               </p>
             </div>
-            <div class="flex-item">
-              <ul class="list-none mt-0">
-                <li class="text-orange bg-white p-2 radius mb-3">①がんの予防やがん検診に関する情報の提供</li>
-                <li class="text-orange bg-white p-2 radius mb-3">②がんの治療に関する一般的な情報の提供</li>
-                <li class="text-orange bg-white p-2 radius mb-3">③がんとの共生に関する情報の提供・相談支援</li>
-                <li class="text-orange bg-white p-2 radius mb-3">④その他</li>
-                <li class="text-orange bg-white p-2 radius mb-3">
-                  以下の項目のような、自施設での提供が難しい場合、適切な医療機関に紹介いたします。
-                </li>
+            <div class="flex-item-shrink">
+              <img
+                src="img/footer-tel.svg"
+                alt="電話のアイコン"
+                width="310"
+                height="62"
+              />
+              <ul>
+                <li>プライバシーポリシー</li>
+                <li>サイトポリシー</li>
+                <li>サイトマップ</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <div class="back-to-top" id="backToTop">
-      <a href="#main" aria-label="トップに戻る"><img src="img/top.svg" alt="ページの先頭に戻るボタン" width="34" height="34" /></a>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="flex flex-column-s justify-between gap-30">
-          <div class="footer-item-shrink">
-            <img src="img/small-logo.svg" alt="弘前大学腫瘍センターロゴ" width="252" height="58">
-          </div>
-          <div class="flex-item-shrink">
-            <img src="img/profile.svg" alt="腫瘍センターの所在地情報のイラスト" width="253" height="67">
-            <p>〒036-8563 青森県弘前市本町53番地<br>
-              TEL: 0172-39-5111（代表）<br>
-              FAX: 0172-39-5003
-            </p>
-          </div>
-          <div class="flex-item-shrink">
-            <img src="img/footer-tel.svg" alt="電話のアイコン" width="310" height="62">
-            <ul>
-              <li>プライバシーポリシー</li>
-              <li>サイトポリシー</li>
-              <li>サイトマップ</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="js/app.js" defer></script>
-</body>
-
+    </footer>
+    <script src="js/app.js" defer></script>
+  </body>
 </html>
