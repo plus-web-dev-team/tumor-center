@@ -23,14 +23,14 @@
   <link rel="manifest" href="site.webmanifest" />
   <meta name="theme-color" content="#fafafa" />
   <script>
-    (function(d) {
+    (function (d) {
       var config = {
-          kitId: "mbt0fpv",
-          scriptTimeout: 3000,
-          async: true,
-        },
+        kitId: "mbt0fpv",
+        scriptTimeout: 3000,
+        async: true,
+      },
         h = d.documentElement,
-        t = setTimeout(function() {
+        t = setTimeout(function () {
           h.className =
             h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
         }, config.scriptTimeout),
@@ -41,14 +41,14 @@
       h.className += " wf-loading";
       tk.src = "https://use.typekit.net/" + config.kitId + ".js";
       tk.async = true;
-      tk.onload = tk.onreadystatechange = function() {
+      tk.onload = tk.onreadystatechange = function () {
         a = this.readyState;
         if (f || (a && a != "complete" && a != "loaded")) return;
         f = true;
         clearTimeout(t);
         try {
           Typekit.load(config);
-        } catch (e) {}
+        } catch (e) { }
       };
       s.parentNode.insertBefore(tk, s);
     })(document);
@@ -63,28 +63,28 @@
         <ul>
           <li><a href="#about" class="nav-tumor-center">腫瘍センターについて</a>
             <ul>
-              <li><a href="#cancerboard" class="nav-tumor-center">キャンサーボード</a></li>
-              <li><a href="#cooperative" class="nav-tumor-center">協力体制</a></li>
-              <li><a href="#greeting" class="nav-tumor-center">ごあいさつ</a></li>
+              <li><a href="./#cancerboard" class="nav-tumor-center">キャンサーボード</a></li>
+              <li><a href="./#cooperative" class="nav-tumor-center">協力体制</a></li>
+              <li><a href="./#greeting" class="nav-tumor-center">ごあいさつ</a></li>
             </ul>
           </li>
-          <li><a href="#news" class="nav-news">お知らせ</a></li>
-          <li><a href="#patient" class="nav-patient">患者さんへ</a>
+          <li><a href="./#news" class="nav-news">お知らせ</a></li>
+          <li><a href="./#patient" class="nav-patient">患者さんへ</a>
             <ul>
-              <li><a href="#consultation" class="nav-patient">相談するには</a></li>
-              <li><a href="#surgery" class="nav-patient">手術とは</a></li>
-              <li><a href="#chemotherapy" class="nav-patient">化学療法とは</a></li>
-              <li><a href="#radiation-therapy" class="nav-patient">放射線治療とは</a></li>
-              <li><a href="#palliative-care" class="nav-patient">緩和ケアとは</a></li>
-              <li><a href="#genome-testing" class="nav-patient">がんゲノム医療室</a></li>
-              <li><a href="#medical-achievements" class="nav-patient">診療実績</a></li>
-              <li><a href="#second-opinion" class="nav-patient">セカンドオピニオン</a></li>
+              <li><a href="./#consultation" class="nav-patient">相談するには</a></li>
+              <li><a href="./#surgery" class="nav-patient">手術とは</a></li>
+              <li><a href="./#chemotherapy" class="nav-patient">化学療法とは</a></li>
+              <li><a href="./#radiation-therapy" class="nav-patient">放射線治療とは</a></li>
+              <li><a href="./#palliative-care" class="nav-patient">緩和ケアとは</a></li>
+              <li><a href="./#genome-testing" class="nav-patient">がんゲノム医療室</a></li>
+              <li><a href="./#medical-achievements" class="nav-patient">診療実績</a></li>
+              <li><a href="./#second-opinion" class="nav-patient">セカンドオピニオン</a></li>
             </ul>
           </li>
-          <li><a href="#info" class="nav-info">お役立ち情報</a>
+          <li><a href="./#info" class="nav-info">お役立ち情報</a>
             <ul>
-              <li><a href="#cancer-information-service" class="nav-info">がん情報サービス</a></li>
-              <li><a href="#procedure" class="nav-info">青森県がん情報サービス</a></li>
+              <li><a href="./#cancer-information-service" class="nav-info">がん情報サービス</a></li>
+              <li><a href="./#procedure" class="nav-info">青森県がん情報サービス</a></li>
             </ul>
           </li>
         </ul>
@@ -104,7 +104,8 @@
       <div class="container">
         <div class="sp-header-header mt-5">
           <div class="sp-header-logo">
-            <a href="https://www.med.hirosaki-u.ac.jp/~cancer-c/" target="_blank" rel="noopener noreferrer"><img src="img/small-logo.svg" alt="弘前大学腫瘍センターのモバイル用ロゴ" width="252" height="58"></a>
+            <a href="https://www.med.hirosaki-u.ac.jp/~cancer-c/" target="_blank" rel="noopener noreferrer"><img
+                src="img/small-logo.svg" alt="弘前大学腫瘍センターのモバイル用ロゴ" width="252" height="58"></a>
           </div>
         </div>
         <div class="sp-header-inner">
@@ -201,6 +202,7 @@
             </div>
             <div class="flex-item">
               <div id="content"></div>
+              <p class="text-right"><a href="news.html">もっと見る</a></p>
             </div>
           </div>
         </div>
@@ -252,7 +254,8 @@
                   <p class="mb-3">
                     放射線治療は、手術と同様、局所に対する治療ですが、手術のように臓器を取り除いたりすることなくがんの部分に放射線をあてて治療します。治療の目的は、完治を目指す場合と苦痛を緩和する場合の2つに分かれます。
                   </p>
-                  <a href="https://www.med.hirosaki-u.ac.jp/~radio/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-black w-100">がん放射線治療診療室</a>
+                  <a href="https://www.med.hirosaki-u.ac.jp/~radio/index.html" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-black w-100">がん放射線治療診療室</a>
                 </div>
               </div>
               <div>
@@ -262,7 +265,8 @@
                 <div class="article-content">
                   <p class="mb-3">緩和ケアは、がんに伴う心と体のつらさを和らげます。緩和ケアは、がんと診断されたときから始まります。がんの治療とともに、つらさを感じるときにはいつでも受けることができます。
                   </p>
-                  <a href="https://www.med.hirosaki-u.ac.jp/hospital/clindtl/anes.html" target="_blank" rel="noopener noreferrer" class="btn btn-black w-100">緩和ケア診療室</a>
+                  <a href="https://www.med.hirosaki-u.ac.jp/hospital/clindtl/anes.html" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-black w-100">緩和ケア診療室</a>
                 </div>
               </div>
               <div>
@@ -294,7 +298,8 @@
                   <p class="mb-3">
                     診断や治療選択などについて、現在診療を受けている担当医とは別の医師に求める助言（第2の意見）およびそれを求めることをセカンドオピニオンといいます。ご希望の際は、まずは主治医へご相談ください。
                   </p>
-                  <a href="https://www.med.hirosaki-u.ac.jp/hospital/visit/second_opinion.html" target="_blank" rel="noopener noreferrer" class="btn btn-black w-100">悪性腫瘍（がん）における<br>
+                  <a href="https://www.med.hirosaki-u.ac.jp/hospital/visit/second_opinion.html" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-black w-100">悪性腫瘍（がん）における<br>
                     セカンド・オピニオン外来</a>
                 </div>
               </div>
@@ -356,9 +361,9 @@
           <div class="flex-item-shrink">
             <img src="img/footer-tel.svg" alt="電話のアイコン" width="310" height="62">
             <ul>
-              <li>プライバシーポリシー</li>
-              <li>サイトポリシー</li>
-              <li>サイトマップ</li>
+              <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+              <li><a href="site-policy.html">サイトポリシー</a></li>
+              <li><a href="sitemap.html">サイトマップ</a></li>
             </ul>
           </div>
         </div>

@@ -396,6 +396,58 @@ a {
     max-height: 100em;
 }
 
+#pagination {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+    transition: box-shadow 0.3s;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+#pagination a:hover {
+    background-color: #f28c38;
+    color: #fff;
+    text-decoration: none;
+}
+
+#pagination a.current-page {
+    background-color: #f28c38;
+    color: #fff;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.outline-orange {
+    border: 1px solid #f28c38;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
 /* ==========================================================================
    スマホ用（〜480px）
    ========================================================================== */
