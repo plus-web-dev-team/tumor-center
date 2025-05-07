@@ -21,6 +21,11 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -448,7 +453,7 @@ a {
     text-align: center;
 }
 
-.accordion {
+.accordion-toggle {
     cursor: pointer;
 }
 
