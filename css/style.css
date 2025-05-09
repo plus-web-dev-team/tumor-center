@@ -41,7 +41,6 @@ main {
     margin-top: clamp(3.75rem, 2.196rem + 6.63vw, 7.5rem);
 }
 
-
 header {
     width: 100%;
     position: fixed;
@@ -466,22 +465,66 @@ a {
    ul（リスト）の汎用スタイル
    ========================================================================== */
 
-ul.default-list {
+.default-list {
     list-style-type: disc;
     padding-left: 1em;
     margin: 0;
 }
 
-ul.no-marker {
+.no-marker {
     list-style: none;
     padding-left: 0;
     margin: 0;
 }
 
-ul.numbered-list {
+.numbered-list {
     list-style-type: decimal;
     padding-left: 1.5em;
     margin: 0;
+}
+
+/* ==========================================================================
+   マップモーダル
+   ========================================================================== */
+#modalMap {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+#modalMapClose {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#modalMapImg {
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: auto;
+    display: block;
+}
+
+.modal-fade {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-fade.active {
+    display: flex !important;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s;
 }
 
 /* ==========================================================================

@@ -222,8 +222,14 @@
                   <div class="item-body">無　料</div>
                 </li>
               </ul>
-              <div class="img-box">
-                <img src="img/supportcenter-map.svg" alt="がん相談支援センターの地図" width="628" height="546" />
+              <div class="img-box" style="position:relative;">
+                <img src="img/supportcenter-map.svg" alt="がん相談支援センターの地図" width="628" height="546" id="popupMap"
+                  style="cursor:pointer;" />
+                <!-- モーダル本体（初期は非表示） -->
+                <div id="modalMap" class="modal-fade">
+                  <span id="modalMapClose">&times;</span>
+                  <img id="modalMapImg" src="" alt="がん相談支援センターの地図" width="628" height="546">
+                </div>
               </div>
             </div>
           </div>
@@ -456,19 +462,6 @@
     </div>
   </footer>
   <script src="js/app.js" defer></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('.accordion-toggle').forEach(toggle => {
-        const originalText = toggle.textContent.trim();
-        toggle.addEventListener('click', () => {
-          const content = toggle.nextElementSibling;
-          const isOpen = content.style.display === 'block';
-          content.style.display = isOpen ? 'none' : 'block';
-          toggle.textContent = isOpen ? originalText : '閉じる';
-        });
-      });
-    });
-  </script>
 </body>
 
 </html>

@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             article.innerHTML = `
                 <time class="article-date" datetime="${item.createdAt}">${formattedDate}</time>
-                <h2 class="article-title">${item.title}</h2>
+                <h2 class="article-title hover-orange">${item.title}</h2>
             `;
 
             wrapper.appendChild(article);

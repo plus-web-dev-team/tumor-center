@@ -368,28 +368,6 @@
   <script src="./js/animation.js" defer></script>
   <script src="./js/app.js" defer></script>
   <script src="./js/news.js" defer></script>
-  <script>
-    // ページ内リンククリック時のスクロール補正（レスポンシブ対応＋余白追加）
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        const target = document.querySelector(targetId);
-        if (target) {
-          e.preventDefault();
-          const header = document.querySelector("header");
-          const headerHeight = header ? header.offsetHeight : 0;
-          const scrollMargin = 10; // ヘッダーと対象要素の間の余白
-          const elementPosition = target.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerHeight - scrollMargin;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth',
-          });
-        }
-      });
-    });
-  </script>
 </body>
 
 </html>
