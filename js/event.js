@@ -12,6 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 async function fetchEvents(offset) {
     const container = document.getElementById('event-container');
     const pagination = document.getElementById('pagination');
+
+    if (!container) {
+        console.warn('表示先の #event-container が見つかりません。処理を中断します。');
+        return;
+    }
+
     container.innerHTML = '<div class="loading">イベントを読み込んでいます...</div>';
 
     try {
@@ -25,7 +31,13 @@ async function fetchEvents(offset) {
 
         totalCount = data.totalCount;
         renderEvents(data.contents, container);
-        renderPagination(pagination);
+
+        if (pagination) {
+            renderPagination(pagination);
+        } else {
+            console.warn('#pagination が見つかりません。ページネーションは表示されません。');
+        }
+
     } catch (err) {
         console.error('取得失敗:', err);
         container.innerHTML = `<div class="error">データの取得に失敗しました：${err.message}</div>`;
@@ -55,7 +67,6 @@ function renderEvents(contents, container) {
                 </ul>
             </div>
         `;
-        // Add accordion toggle functionality
         const toggle = articleEl.querySelector('.accordion-toggle');
         const content = articleEl.querySelector('.accordion-content');
         toggle.addEventListener('click', () => {
@@ -68,6 +79,11 @@ function renderEvents(contents, container) {
 }
 
 function renderPagination(paginationContainer) {
+    if (!paginationContainer) {
+        console.warn('#pagination が見つかりません（ページネーションをスキップ）');
+        return;
+    }
+
     paginationContainer.innerHTML = '';
     const pageCount = Math.ceil(totalCount / limit);
 
