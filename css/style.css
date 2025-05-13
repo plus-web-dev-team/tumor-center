@@ -391,7 +391,7 @@ a {
 
 .expandable-text {
     font-size: clamp(1rem, 0.767rem + 0.99vw, 1.563rem);
-    max-height: 7em;
+    max-height: 8em;
     overflow: hidden;
     position: relative;
     transition: max-height 0.4s ease;
