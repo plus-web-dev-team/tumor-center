@@ -391,7 +391,7 @@ a {
 
 .expandable-text {
     font-size: clamp(1rem, 0.767rem + 0.99vw, 1.563rem);
-    max-height: 8em;
+    max-height: 7em;
     overflow: hidden;
     position: relative;
     transition: max-height 0.4s ease;
@@ -399,6 +399,10 @@ a {
 
 .expandable-text.expanded {
     max-height: 100em;
+}
+
+.expandable-text p {
+    margin: 0;
 }
 
 #pagination {
