@@ -1,0 +1,9 @@
+{
+	"extends": ["markuplint:recommended"],
+	"rules": {
+		"attr-duplication": true,
+		"attr-value-quotes": true,
+		"doctype": true,
+		"permitted-contents": true
+	}
+}
