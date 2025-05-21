@@ -305,6 +305,7 @@ a {
     margin: 0;
     font-size: 1.25rem;
     cursor: pointer;
+    font-weight: 400;
 }
 
 .article-title.hover-green:hover {
@@ -692,7 +693,7 @@ a {
 
     .object span {
         font-size: 4em;
-        font-weight: bold;
+        font-weight: 400;
         color: white;
         animation: fadeOut 3s forwards;
         animation-delay: 2s;
@@ -821,12 +822,28 @@ a {
     .sp-header {
         display: none;
     }
+
+    #cancerboard::before,
+    #consultation::before,
+    #surgery::before,
+    #chemotherapy::before,
+    #radiation-therapy::before,
+    #palliative-care::before,
+    #genome-testing::before,
+    #medical-achievements::before,
+    #second-opinion::before {
+        content: "";
+        display: block;
+        height: 150px;
+        margin-top: -150px;
+        visibility: hidden;
+    }
 }
 
 /* ==========================================================================
    デスクトップ（1280px以上）
    ========================================================================== */
-@media (max-width: 1280px) {
+@media (max-width: 1439px) {
     body {
         background-color: var(--main-color);
         margin: 0;
@@ -1098,6 +1115,22 @@ a {
     .sp-header {
         display: none;
     }
+
+    #cancerboard::before,
+    #consultation::before,
+    #surgery::before,
+    #chemotherapy::before,
+    #radiation-therapy::before,
+    #palliative-care::before,
+    #genome-testing::before,
+    #medical-achievements::before,
+    #second-opinion::before {
+        content: "";
+        display: block;
+        height: 150px;
+        margin-top: -150px;
+        visibility: hidden;
+    }
 }
 
 /* ==========================================================================
@@ -1108,6 +1141,14 @@ a {
         max-width: 960px;
         margin: 0 auto;
         position: relative;
+    }
+
+    header nav {
+        padding: 0;
+    }
+
+    nav ul li a {
+        padding: 0;
     }
 }
 

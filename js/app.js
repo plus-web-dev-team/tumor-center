@@ -151,25 +151,5 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-    // アンカークリック時のスクロールずれ修正
-    const OFFSET = 150;
 
-    for (const anchor of document.querySelectorAll('a[href^="#"]')) {
-        anchor.addEventListener('click', (e) => {
-            const targetId = anchor.getAttribute('href').slice(1);
-            const targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
-                e.preventDefault();
-
-                // ドキュメント全体からのオフセットを計算
-                const elementY = targetElement.offsetTop;
-
-                window.scrollTo({
-                    top: elementY - OFFSET,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    }
 });
