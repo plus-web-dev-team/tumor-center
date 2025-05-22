@@ -380,66 +380,6 @@
   <script src="./js/animation.js" defer></script>
   <script src="./js/app.js" defer></script>
   <script src="./js/news.js" defer></script>
-  <script>
-    // 横スクロールの原因となる要素を検出する関数
-    function findHorizontalOverflow() {
-      const windowWidth = window.innerWidth;
-      const body = document.body;
-
-      console.log(`ビューポート幅: ${windowWidth}px`);
-      console.log(`ドキュメント全体の幅: ${body.scrollWidth}px`);
-
-      if (body.scrollWidth > windowWidth) {
-        console.log('横スクロールが発生しています（差分: ' + (body.scrollWidth - windowWidth) + 'px）');
-
-        // すべての要素をチェック
-        const allElements = document.querySelectorAll('*');
-        const overflowElements = [];
-
-        allElements.forEach(element => {
-          const rect = element.getBoundingClientRect();
-          // 右端または左端がビューポートをはみ出している要素を検出
-          if (rect.right > windowWidth || rect.left < 0) {
-            // 要素の情報を収集
-            overflowElements.push({
-              element: element,
-              width: rect.width,
-              right: rect.right,
-              tagName: element.tagName,
-              className: element.className,
-              id: element.id,
-              overflowX: window.getComputedStyle(element).overflowX,
-              overflowAmount: Math.max(rect.right - windowWidth, 0 - rect.left)
-            });
-          }
-        });
-
-        // オーバーフロー量でソート（最も大きい順）
-        overflowElements.sort((a, b) => b.overflowAmount - a.overflowAmount);
-
-        // 結果を表示
-        console.log('横幅がはみ出している要素（オーバーフロー量順）:');
-        overflowElements.forEach((info, index) => {
-          const element = info.element;
-          console.log(`${index + 1}. %o`, element);
-          console.log(`   タグ: ${info.tagName}, ID: ${info.id || 'なし'}, クラス: ${info.className || 'なし'}`);
-          console.log(`   幅: ${info.width.toFixed(2)}px, はみ出し量: ${info.overflowAmount.toFixed(2)}px`);
-          console.log(`   親要素: %o`, element.parentElement);
-
-          // 目立たせるためにハイライト（テスト時のみ使用）
-          element.style.outline = '2px solid red';
-        });
-
-        return overflowElements.length > 0 ? overflowElements : null;
-      } else {
-        console.log('横スクロールは発生していません');
-        return null;
-      }
-    }
-
-    // 関数を実行
-    const results = findHorizontalOverflow();
-  </script>
 </body>
 
 </html>
