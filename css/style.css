@@ -639,7 +639,7 @@ a {
 
     .animation {
         margin-top: -120px;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .animation-inner {
@@ -939,7 +939,7 @@ a {
 
     .animation {
         margin-top: -120px;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .animation-inner {
