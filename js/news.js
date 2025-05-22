@@ -3,12 +3,12 @@ const endpoint = "https://tkrizbapte.microcms.io/api/v1/blogs";
 const limit = 5;
 let offset = 0;
 let totalCount = 0;
-let currentPage = 1; // ★追加
+let currentPage = 1;
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOMContentLoaded: ページの読み込み完了");
     const contentContainer = document.getElementById("content");
-    const paginationContainer = document.getElementById("pagination"); // ★ページネーション用divを想定
+    const paginationContainer = document.getElementById("pagination"); // ページネーション用divを想定
 
     async function fetchArticles(offset) {
         contentContainer.innerHTML = '<div class="loading">記事を読み込んでいます...</div>';
@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (cachedData) {
             console.log("キャッシュからデータを取得");
             const parsedData = JSON.parse(cachedData);
-            totalCount = parsedData.totalCount; // ★ここでtotalCountもキャッシュから
+            totalCount = parsedData.totalCount; // ここでtotalCountもキャッシュから
             renderArticles(parsedData);
-            renderPagination(); // ★追加
+            renderPagination(); // 追加
             return;
         }
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             totalCount = data.totalCount;
             sessionStorage.setItem(cacheKey, JSON.stringify(data));
             renderArticles(data);
-            renderPagination(); // ★追加
+            renderPagination(); // 追加
         } catch (error) {
             console.error("APIエラー:", error);
             contentContainer.innerHTML = `
@@ -114,17 +114,17 @@ document.addEventListener("DOMContentLoaded", () => {
             const button = document.createElement("a");
             button.href = "javascript:void(0)";
             button.textContent = i;
-            button.classList.add("text-orange", "hover-orange", "outline-orange"); // ★ 最初はoutline-orangeを付与
+            button.classList.add("text-orange", "hover-orange", "outline-orange"); // 最初はoutline-orangeを付与
 
             if (i === currentPage) {
-                button.classList.remove("outline-orange"); // ★ カレントページだけoutline-orangeを外す
+                button.classList.remove("outline-orange"); // カレントページだけoutline-orangeを外す
                 button.classList.add("current-page");
             }
 
             button.addEventListener("click", () => {
                 currentPage = i;
                 offset = (currentPage - 1) * limit;
-                fetchArticles(offset); // ★ クラス操作はせず、fetchArticlesに任せる
+                fetchArticles(offset); // クラス操作はせず、fetchArticlesに任せる
             });
 
             paginationContainer.appendChild(button);
