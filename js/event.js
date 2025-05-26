@@ -60,6 +60,7 @@ function renderEvents(contents, container) {
                     ${article.events_time ? `<li>時間：${article.events_time}</li>` : ''}
                     ${article.events_contact ? `<li>申込方法：${article.events_contact}</li>` : ''}
                     ${article.events_staff ? `<li>担当：${article.events_staff}</li>` : ''}
+                    ${article.events_comment ? `<li>${article.events_comment}</li>` : ''}
                     <li class="flex flex-column gap-10 mt-3">
                         ${article.events_form ? `<a class="btn btn-green w-max" href="${article.events_form}" target="_blank" rel="noopener noreferrer">申し込みフォーム</a>` : ''}
                         ${article.events_flyer ? `<a class="btn btn-green w-max" href="${article.events_flyer}" target="_blank" rel="noopener noreferrer">チラシ</a>` : ''}
