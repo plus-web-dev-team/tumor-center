@@ -831,7 +831,9 @@ a {
     #palliative-care,
     #genome-testing,
     #medical-achievements,
-    #second-opinion {
+    #second-opinion,
+    #cancer-information-service,
+    #procedure {
         padding-top: 150px;
         margin-top: -150px;
     }
@@ -1121,7 +1123,9 @@ a {
     #palliative-care,
     #genome-testing,
     #medical-achievements,
-    #second-opinion {
+    #second-opinion,
+    #cancer-information-service,
+    #procedure {
         padding-top: 150px;
         margin-top: -150px;
     }
