@@ -1,43 +1,50 @@
-const limit = 8;
+const limit = 100;
 let offset = 0;
-let totalCount = 0;
 let currentPage = 1;
 const apiKey = '3CeoebN8VtZl0ikcVzwVnWkBujTFdzqOASpT';
 const endpoint = 'https://i4i1s3gwi5.microcms.io/api/v1/events';
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetchEvents(offset);
+    fetchAllEvents();
 });
 
-async function fetchEvents(offset) {
+async function fetchAllEvents() {
     const container = document.getElementById('event-container');
     const pagination = document.getElementById('pagination');
-
     if (!container) {
         console.warn('表示先の #event-container が見つかりません。処理を中断します。');
         return;
     }
-
     container.innerHTML = '<div class="loading">イベントを読み込んでいます...</div>';
-
+    let allContents = [];
+    let offset = 0;
+    let totalCount = 0;
     try {
-        const response = await fetch(`${endpoint}?limit=${limit}&offset=${offset}`, {
+        // まず最初のリクエストでtotalCountを取得
+        const firstRes = await fetch(`${endpoint}?limit=${limit}&offset=${offset}`, {
             headers: { 'X-MICROCMS-API-KEY': apiKey }
         });
-
-        if (!response.ok) throw new Error(`HTTPエラー: ${response.status}`);
-        const data = await response.json();
-        if (!Array.isArray(data.contents)) throw new Error('`contents` が配列ではありません');
-
-        totalCount = data.totalCount;
-        renderEvents(data.contents, container);
-
-        if (pagination) {
-            renderPagination(pagination);
-        } else {
-            console.warn('#pagination が見つかりません。ページネーションは表示されません。');
+        if (!firstRes.ok) throw new Error(`HTTPエラー: ${firstRes.status}`);
+        const firstData = await firstRes.json();
+        if (!Array.isArray(firstData.contents)) throw new Error('`contents` が配列ではありません');
+        totalCount = firstData.totalCount;
+        allContents = firstData.contents;
+        // 2回目以降のリクエスト
+        let fetched = allContents.length;
+        while (fetched < totalCount) {
+            offset += limit;
+            const res = await fetch(`${endpoint}?limit=${limit}&offset=${offset}`, {
+                headers: { 'X-MICROCMS-API-KEY': apiKey }
+            });
+            if (!res.ok) throw new Error(`HTTPエラー: ${res.status}`);
+            const data = await res.json();
+            if (!Array.isArray(data.contents)) throw new Error('`contents` が配列ではありません');
+            allContents = allContents.concat(data.contents);
+            fetched = allContents.length;
         }
-
+        renderEvents(allContents, container);
+        // ページネーション非表示
+        if (pagination) pagination.style.display = 'none';
     } catch (err) {
         console.error('取得失敗:', err);
         container.innerHTML = `<div class="error">データの取得に失敗しました：${err.message}</div>`;
@@ -100,7 +107,7 @@ function renderPagination(paginationContainer) {
         button.addEventListener('click', () => {
             currentPage = i;
             offset = (i - 1) * limit;
-            fetchEvents(offset);
+            fetchAllEvents();
         });
         paginationContainer.appendChild(button);
     }
