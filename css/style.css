@@ -658,165 +658,33 @@ a {
     .object {
         width: 15vw;
         height: 15vw;
-        background-color: red;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* animation-duration: 5s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        mix-blend-mode: multiply;
-        box-sizing: border-box;
-        word-break: break-word; */
     }
 
     .purple {
         background-color: var(--purple);
-        animation-name: morph1;
     }
 
     .blue {
         background-color: var(--blue);
-        animation-name: morph2;
     }
 
     .orange {
         background-color: var(--orange);
-        animation-name: morph3;
     }
 
     .green {
         background-color: var(--green);
-        animation-name: morph4;
     }
 
     .object span {
         font-size: 4em;
         font-weight: 400;
         color: white;
-        animation: fadeOut 3s forwards;
-        animation-delay: 2s;
         pointer-events: none;
-    }
-
-    /* @keyframes fadeOut {
-        0% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 0;
-        }
-    } */
-
-    @keyframes morph1 {
-        0% {
-            border-radius: 50%;
-        }
-
-        15% {
-            border-radius: 65% 35% 55% 45% / 40% 60% 70% 30%;
-        }
-
-        30% {
-            border-radius: 80% 20% 30% 70% / 60% 40% 50% 50%;
-        }
-
-        45% {
-            border-radius: 50% 70% 60% 30% / 30% 50% 80% 40%;
-        }
-
-        60% {
-            border-radius: 40% 60% 80% 20% / 50% 70% 30% 50%;
-        }
-
-        75% {
-            border-radius: 70% 50% 40% 60% / 60% 40% 60% 40%;
-        }
-
-        100% {
-            border-radius: 50%;
-        }
-    }
-
-    @keyframes morph2 {
-        0% {
-            border-radius: 50%;
-        }
-
-        20% {
-            border-radius: 40% 60% 70% 30% / 50% 80% 40% 60%;
-        }
-
-        40% {
-            border-radius: 70% 30% 40% 60% / 60% 30% 70% 50%;
-        }
-
-        60% {
-            border-radius: 60% 40% 30% 70% / 40% 60% 80% 30%;
-        }
-
-        80% {
-            border-radius: 30% 70% 60% 40% / 50% 40% 60% 70%;
-        }
-
-        100% {
-            border-radius: 50%;
-        }
-    }
-
-
-    @keyframes morph3 {
-        0% {
-            border-radius: 50%;
-        }
-
-        25% {
-            border-radius: 50% 70% 30% 60% / 60% 30% 70% 40%;
-        }
-
-        50% {
-            border-radius: 30% 60% 50% 80% / 40% 80% 30% 50%;
-        }
-
-        75% {
-            border-radius: 80% 50% 60% 30% / 70% 50% 40% 60%;
-        }
-
-        100% {
-            border-radius: 50%;
-        }
-    }
-
-    @keyframes morph4 {
-        0% {
-            border-radius: 50%;
-        }
-
-        10% {
-            border-radius: 60% 40% 80% 20% / 30% 70% 40% 60%;
-        }
-
-        30% {
-            border-radius: 70% 30% 40% 60% / 60% 30% 70% 40%;
-        }
-
-        50% {
-            border-radius: 40% 60% 50% 70% / 80% 40% 60% 30%;
-        }
-
-        70% {
-            border-radius: 60% 50% 70% 40% / 50% 30% 40% 80%;
-        }
-
-        90% {
-            border-radius: 30% 70% 60% 50% / 60% 80% 30% 70%;
-        }
-
-        100% {
-            border-radius: 50%;
-        }
     }
 
     .sp-header {
@@ -952,163 +820,33 @@ a {
     .object {
         width: 15vw;
         height: 15vw;
-        background-color: red;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* animation-duration: 5s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        mix-blend-mode: multiply; */
     }
 
     .purple {
         background-color: var(--purple);
-        animation-name: morph1;
     }
 
     .blue {
         background-color: var(--blue);
-        animation-name: morph2;
     }
 
     .orange {
         background-color: var(--orange);
-        animation-name: morph3;
     }
 
     .green {
         background-color: var(--green);
-        animation-name: morph4;
     }
 
     .object span {
         font-size: 4em;
         font-weight: bold;
         color: white;
-        animation: fadeOut 3s forwards;
-        animation-delay: 2s;
         pointer-events: none;
-    }
-
-    /* @keyframes fadeOut {
-        0% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 0;
-        }
-    } */
-
-    @keyframes morph1 {
-        0% {
-            border-radius: 50%;
-        }
-
-        15% {
-            border-radius: 65% 35% 55% 45% / 40% 60% 70% 30%;
-        }
-
-        30% {
-            border-radius: 80% 20% 30% 70% / 60% 40% 50% 50%;
-        }
-
-        45% {
-            border-radius: 50% 70% 60% 30% / 30% 50% 80% 40%;
-        }
-
-        60% {
-            border-radius: 40% 60% 80% 20% / 50% 70% 30% 50%;
-        }
-
-        75% {
-            border-radius: 70% 50% 40% 60% / 60% 40% 60% 40%;
-        }
-
-        100% {
-            border-radius: 50%;
-        }
-    }
-
-    @keyframes morph2 {
-        0% {
-            border-radius: 50%;
-        }
-
-        20% {
-            border-radius: 40% 60% 70% 30% / 50% 80% 40% 60%;
-        }
-
-        40% {
-            border-radius: 70% 30% 40% 60% / 60% 30% 70% 50%;
-        }
-
-        60% {
-            border-radius: 60% 40% 30% 70% / 40% 60% 80% 30%;
-        }
-
-        80% {
-            border-radius: 30% 70% 60% 40% / 50% 40% 60% 70%;
-        }
-
-        100% {
-            border-radius: 50%;
-        }
-    }
-
-
-    @keyframes morph3 {
-        0% {
-            border-radius: 50%;
-        }
-
-        25% {
-            border-radius: 50% 70% 30% 60% / 60% 30% 70% 40%;
-        }
-
-        50% {
-            border-radius: 30% 60% 50% 80% / 40% 80% 30% 50%;
-        }
-
-        75% {
-            border-radius: 80% 50% 60% 30% / 70% 50% 40% 60%;
-        }
-
-        100% {
-            border-radius: 50%;
-        }
-    }
-
-    @keyframes morph4 {
-        0% {
-            border-radius: 50%;
-        }
-
-        10% {
-            border-radius: 60% 40% 80% 20% / 30% 70% 40% 60%;
-        }
-
-        30% {
-            border-radius: 70% 30% 40% 60% / 60% 30% 70% 40%;
-        }
-
-        50% {
-            border-radius: 40% 60% 50% 70% / 80% 40% 60% 30%;
-        }
-
-        70% {
-            border-radius: 60% 50% 70% 40% / 50% 30% 40% 80%;
-        }
-
-        90% {
-            border-radius: 30% 70% 60% 50% / 60% 80% 30% 70%;
-        }
-
-        100% {
-            border-radius: 50%;
-        }
     }
 
     .sp-header {
